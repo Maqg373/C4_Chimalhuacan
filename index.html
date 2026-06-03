@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://chimalhuacan.github.io/c4-chimalhuacan/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>C4 Chimalhuacán</title>
+
+<!-- ICONOS -->
+<link href="./C4 Chimalhuacán_files/all.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(rgba(128,0,32,0.9), rgba(128,0,32,0.9)),
+    url('https://images.unsplash.com/photo-1502920917128-1aa500764ce7');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* BOTONES */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -40px;
+}
+
+.card-btn {
+    width: 170px;
+    height: 170px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #800020;
+    font-weight: bold;
+}
+
+.card-btn i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-btn:hover {
+    transform: scale(1.05);
+    background: #800020;
+    color: white;
+}
+
+.activo-btn {
+    background: #800020;
+    color: white;
+}
+
+/* CONTENIDO */
+.seccion {
+    display: none;
+    padding: 40px;
+}
+
+.activa {
+    display: block;
+}
+
+.card {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    text-align: center;
+    color: #800020;
+}
+
+.card p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* FRASE */
+.frase {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #800020;
+}
+
+/* FOOTER */
+footer {
+    background: #800020;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-btn img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: contain;
+    
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>C4 CHIMALHUACÁN</h1>
+</div>
+
+<!-- BOTONES CON ICONOS -->
+<div class="menu">
+    <div class="card-btn" onclick="mostrar(&#39;inicio&#39;, this)">
+        <i class="fas fa-home"></i>
+        <img src="imagenes/Inicio.jpg" alt="Inicio">
+        Inicio
+    </div>
+
+    <div class="card-btn" onclick="mostrar(&#39;monitoreo&#39;, this)">
+        <i class="fas fa-video"></i>
+         <img src="imagenes/PG.jpg.jpeg" alt="Policía de genero">
+    </div>
+
+    <div class="card-btn" onclick="mostrar(&#39;prevencion&#39;, this)">
+        <i class="fas fa-shield-alt"></i>
+        <img src="imagenes/direccionPD.jpeg" alt="Prevención del Delito">
+    </div>
+
+    <div class="card-btn" onclick="mostrar(&#39;analisis&#39;, this)">
+        <i class="fas fa-chart-bar"></i>
+        <img src="imagenes/upama.jpg.jpeg" alt="UPAMA">
+    </div>
+
+    <div class="card-btn" onclick="mostrar(&#39;busqueda&#39;, this)">
+        <i class="fas fa-search"></i>
+        <img src="imagenes/celula.jpeg" alt="Célula de Búsqueda">
+    </div>
+</div>
+
+<!-- INICIO -->
+<div id="inicio" class="seccion">
+    <div class="card">
+        <h2>Centro de Prevención Social De Las Violencias Y Delincuencia Con Participación Ciudadana</h2>
+
+        <p>
+        El Centro de Prevención Social de la Violencia y la Delincuencia con Participación Ciudadana del municipio de Chimalhuacán, 
+        Estado de México, se constituye como una instancia estratégica encargada de diseñar, coordinar y ejecutar políticas públicas enfocadas a la prevención integral de las causas que generan violencia y conductas delictivas en la comunidad. 
+        Cuenta para su eficaz y apropiado funcionamiento con las áreas de; Unidad de Análisis y Contexto, Unidad de Atención a Víctimas, Prevención del Delito, Policía de Género, Célula de Búsqueda de Reacción Inmediata, y de la Unidad Policial de Prevención y Atención al maltrato animal (U.P.A.M.A.)
+        </p>
+        
+        <p>
+        Nos encontramos ubicados en Ejido Colectivo esquina Oyamel sin número Barrio Tlatel Xochitenco.
+        </p>
+
+        <div class="frase">
+        </div>
+    </div>
+</div>
+
+<!-- SECCIONES -->
+<div id="monitoreo" class="seccion">
+    <div class="card">
+        <h2>Policía de Género </h2>
+        <p>
+            Son elementos de seguridad ciudadana especializados, encargados de prevenir, detectar y atender a las víctimas de violencia familiar, sexual y de género con estricto apego a los derechos humanos y de las víctimas. 
+            La Policía de Género de Chimalhuacán trabaja día a día para garantizar tu seguridad y el respeto a tus derechos.
+            
+            <ul>
+            <li>
+            Atención inmediata: Brindamos acompañamiento especializado a personas en situación de riesgo.
+            </li>
+            <li>
+            Medidas de protección: Custodias, vigilancia y seguimiento para tu tranquilidad.
+            </li>
+            <li>
+            Canalización segura: Te vinculamos con instituciones que ofrecen apoyo psicológico, jurídico y social.
+            </li>
+            </ul>
+        </p>
+    
+        <div class="frase">
+        Tel: 56-36-23-92-57.
+        </div>
+    </div>
+</div>
+
+<div id="prevencion" class="seccion">
+    <div class="card">
+        <h2>Prevención del Delito</h2>
+        <p>
+             Su objetivo principal es anticiparse al delito y disminuir la violencia,
+            así como mejorar la seguridad ciudadana a través de la participación social y la reconstrucción del tejido comunitario, 
+            por medio de acciones en centros escolares dirigidos a alumnos, padres de familia y docentes, así como en la comunidad en general. 
+            (Platicas de prevención de la violencia y el delito, Reuniones vecinales de seguridad).
+        </p>
+        <div class="frase">
+          Tel: 56-36-23-91-91
+        </div>
+    </div>
+</div>
+
+<div id="analisis" class="seccion">
+    <div class="card">
+        <h2>UPAMA (Unidad Policial de Prevención y Atención al Maltrato Animal).</h2>
+        <p>
+             (Unidad Policial de Prevención y Atención al Maltrato Animal).  Su objetivo es prevenir y atender la violencia, crueldad o maltrato hacia los seres sintientes, atendiendo denuncias por crueldad,
+              abandono o situaciones de riesgo. La UPAMA se coordina con diferentes autoridades como son; Departamento de Control del Zoonosis y el Bienestar Animal,
+               Comisión Estatal de Parques Naturales y de la Fauna (CEPANAF), Procuraduría de Protección al Ambiente del Estado de México (PROPAEM).
+        </p>
+        <div class="frase">
+         Tel:  56-34-72-77-22
+        </div>
+    </div>
+</div>
+
+<div id="busqueda" class="seccion">
+    <div class="card">
+        <h2>Célula de Búsqueda</h2>
+            <p> Las células de búsqueda son elementos de seguridad pública especializada que colaboran en la búsqueda y localización de personas reportadas como desaparecidas.
+            Estas células de búsqueda se coordinan con diferentes autoridades como son;
+            <ul>
+            <li>Comisión Nacional de Búsqueda de Personas.</li>
+            <li>Comisión de Búsqueda de Personas del Estado de México (COBUPEM).</li>
+            <li>Fiscalía Especializada para la Investigación y Persecución de Delitos en Materia de Desaparición Forzada de Personas y Desaparición Cometida por Particulares.</li>
+            <li>Células de Búsqueda locales o municipales.</li>
+            </ul>
+        </p>
+        <div class="frase">
+         Tel: 56-36-23-92-56
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    © 2026 Chimalhuacán
+</footer>
+
+<script>
+function mostrar(id, boton) {
+
+    document.querySelectorAll('.seccion').forEach(s => s.classList.remove('activa'));
+    document.getElementById(id).classList.add('activa');
+
+    document.querySelectorAll('.card-btn').forEach(b => b.classList.remove('activo-btn'));
+    boton.classList.add('activo-btn');
+}
+</script>
+
+
+</body></html>
